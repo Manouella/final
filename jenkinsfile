@@ -42,5 +42,9 @@ pipeline {
                 }
             }
         }
+        stage ("email notification"){
+        mail bcc: '', body: '''Hi,
+         this is build status.
+          thank you,''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'manelbenamara1995@gmail.com'}
 }
 }
