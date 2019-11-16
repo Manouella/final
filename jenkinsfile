@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
-        stage("mvn clean") {
+        stage("mvn deploy") {
             steps {
                 script {
                     // If you are using Windows then you should use "bat" step
